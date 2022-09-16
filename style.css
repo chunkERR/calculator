@@ -1,0 +1,70 @@
+.btn-digits button {
+    background-color: #484848; /* Green background */
+    border: 1px solid black; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1px;
+    flex-wrap: wrap;}
+  
+  .btn-digits button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-digits:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-digits button:hover {
+    background-color: #808080;
+  }
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+    }
+
+*, *::before, *::after {
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+        font-weight: normal;
+      }
+
+
+.container {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.output {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #dcdbe1;
+        border: solid black 0.5px;
+        color: black;
+        border-radius: 5px;
+        width: 100%;
+        height: 20%;
+    }
+
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+      }
