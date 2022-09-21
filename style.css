@@ -1,86 +1,85 @@
 .container > button {
-    background-color: rgba(255, 255, 255, .75); 
-    border: 1px solid white;
-    color: black; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
-    font-size: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1px;
-    flex-wrap: wrap;
-    outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid white;
+  color: black; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  font-size: 2rem;
+  outline: none;
+}
 
-  }
+.btn-digits button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
 
-  .btn-digits button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-  }
-  
-  /* Clear floats (clearfix hack) */
-  .btn-digits:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  /* Add a background color on hover */
-  .container > button:hover {
-    background-color: rgba(255,255,255, .9);
-  }
+/* Clear floats (clearfix hack) */
+.btn-digits:after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
+/* Add a background color on hover */
+.container > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #ebdfcc, #f7a58c);
-    }
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ebdfcc, #f7a58c);
+}
 
-*, *::before, *::after {
-        box-sizing: border-box;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-        font-weight: normal;
-      }
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+  font-weight: normal;
+}
 
 .container {
-    padding: 10px;
-    border-radius: 1em;
-    margin: auto;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
 .output {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: rgba(0, 0, 0, .75);
-        border: solid black 0.5px;
-        color: white;
-        width: 100%;
-        grid-column: 1 / -1;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-        flex-direction: column;
-        padding: 10px;
-        word-wrap: break-word;
-        
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: solid black 0.5px;
+  color: white;
+  width: 100%;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
 
-    }
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
 
+.output .current-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
 
 .span-two {
   grid-column: span 2;
 }
 
-
 h1 {
   display: flex;
   justify-content: center;
-
 }
